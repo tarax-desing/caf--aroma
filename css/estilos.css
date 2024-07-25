@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #39d4ef;
+    --color-secondary: #ff8205;
+    --color-background: #07a1f4;
+    
+}
+
+body{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav  {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(96, 53, 0);
+    color: black;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+}
+
+
+.cabecera {
+    background-image: url("../img/backgroun-image.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+}
+.card-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card {
+    text-align: center;
+}
+@media (min-width: 780px)
+{
+    .card-grid {
+        flex-direction: row;
+    }
+}
+
+.card img {
+    width: 100%;
+}
+footer a {
+    color: black;
+}
