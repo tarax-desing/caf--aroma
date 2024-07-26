@@ -31,9 +31,13 @@ nav a {
     text-decoration: none;
     color: aliceblue;
 }
+nav a:hover {
+    color: #ff0000; /* Color del texto al pasar el cursor */
+  }
 
 .container {
     display: flex;
+    padding: 20px;
 }
 
 
@@ -103,9 +107,19 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation: tacitas 2s ease;
+    animation-delay: 3s;
+
 
 }
-
+@keyframes tacitas {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
 .card {
     text-align: left;
     border-radius: 10px;
@@ -144,6 +158,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    width: 80%;
     max-width: 500px;
     margin: 0 auto;
 }
@@ -172,6 +187,7 @@ form button:hover {
 
 .pie {
     text-align: center;
+    padding: 2rem;
 }
 
 footer a {
